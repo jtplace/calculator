@@ -1,29 +1,53 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a;
+    int b;
+    int option;
+    cout << "Welcome to the calculator" << endl;
+    cout <<"1)Add"<<endl;
+    cout <<"2)Divide"<<endl;
+    cout <<"3)Subtract"<<endl;
+    cout <<"4)Multiply"<<endl;
+cout << "Please select an option : ";
+     cin >> option;
+if(option == 1){
+      cout << "Enter a number" <<endl;
+    cin >> a;
+    cout << a << " + ? " <<endl;
+    cout << "Enter a number" <<endl;
+    cin >> b;
+    cout << a << " + " << b << endl;
+     cout << "Answer is: " << a + b <<endl;
+}
+else if(option == 2){
+      cout << "Enter a number" <<endl;
+    cin >> a;
+    cout << a << " / ? " <<endl;
+    cout << "Enter a number" <<endl;
+    cin >> b;
+    cout << a << " / " << b << endl;
+     cout << "Answer is: " <<a / b <<endl;
+}
+else if (option == 3){
+      cout << "Enter a number" <<endl;
+    cin >> a;
+    cout << a << " - ? " <<endl;
+    cout << "Enter a number" <<endl;
+    cin >> b;
+    cout << a << " - " << b << endl;
+     cout << "Answer is: " <<a - b <<endl;
+}
+else if (option ==4){
+      cout << "Enter a number" <<endl;
+    cin >> a;
+    cout << a << " * ? " <<endl;
+    cout << "Enter a number" <<endl;
+    cin >> b;
+    cout << a << "  * " << b << endl;
+     cout << "Answer is: " <<a * b <<endl;
+}
+return 0;
+}
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
